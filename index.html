@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="list.css">
+  <title>Task List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title"><h1>My Task Board</h1></div>
+    <div class="level"><div id="progress"><div id="green-progress"><p id="xpText">XP 0/500</p></div></div><p class="level-word">Level <span id="level">0</span></p></div>
+    <div class="input"><input type="text" name="task" id="taskInput" placeholder=" "><label for="task" class="placeholder">Add new task...</label><button id="addTask" onclick="addTask()">+</button></div>
+    <h2>Active Tasks</h2>
+    <div id="taskList">
+        <p id="empty">⚔️<br>No quests yet — add your first mission</p>
+    </div>
+    <h2>Task Completed</h2> 
+    <div id="completedTask"><p id="empty-two">No quests Completed yet</p></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
